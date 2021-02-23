@@ -13,7 +13,6 @@ public class Remove_Element_27 {
 //			Confused why the returned value is an integer but your answer is an array?
 //
 //			Note that the input array is passed in by reference, which means a modification to the input array will be known to the caller as well.
-	
 	public int removeElement(int[] a, int val) {
         int k=0;
         for(int i=0;i<a.length;i++){
