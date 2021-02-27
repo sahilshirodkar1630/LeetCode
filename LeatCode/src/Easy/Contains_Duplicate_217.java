@@ -23,9 +23,12 @@ public class Contains_Duplicate_217 {
 	*/
 
 	public boolean containsDuplicate(int[] nums) {
+		//Create a HashMap to put all the elements with the number of frequency of them in the array
         HashMap<Integer,Integer> maps = new  HashMap<Integer,Integer>();
         boolean isDuplicate = false;
         for(int i:nums){
+        	//If any element already exist in the hashmap that means it is repeating
+        	//then break the loop and return true;
             if(maps.containsKey(i)){
                 isDuplicate = true;
                 break;
@@ -33,6 +36,7 @@ public class Contains_Duplicate_217 {
                 maps.put(i,1);
             }
         }
+
         return isDuplicate;
     }
 	
