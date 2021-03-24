@@ -20,7 +20,44 @@ public class Majority_Element_169 {
 //			
 //*/ 
 	
+	
+	//By Using Boyer- Moore Majority Vote Algorithm 
+	// This will Take O(N) Time Complexity and O(1) Space Complexity
+	//Best Approach
+	 public int majorityElement(int[] nums) {
+	        int element =0;
+	        int count=0;
+	        for(int i=0;i<nums.length;i++){
+	            if(count == 0){
+	                element = nums[i];
+	            }
+	            if(nums[i] == element){
+	                count++;
+	            }else{
+	                count--;
+	            }
+	        }
 
+	        count =  0;
+	        for(int i:nums){
+	            if(i == element){
+	                count++;
+	            }
+	        }
+	        
+	        int output =0;
+	        if(count>nums.length/2){
+	            output= element;
+	        }
+	        
+	        return output;
+	    }
+	 
+	
+	
+	
+/*	
+ * This approach will Take O(N) Time Complexity and O(N) Space Complexity
 	public int majorityElement(int[] array) {
         Map<Integer,Integer> maps = new HashMap<Integer,Integer>();
         for(int i: array){
@@ -40,6 +77,7 @@ public class Majority_Element_169 {
         return output;
  }
 	
+*/
 	
 	
 	public static void main(String[] args) {
