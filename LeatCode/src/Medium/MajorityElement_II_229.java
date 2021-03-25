@@ -7,15 +7,16 @@ public class MajorityElement_II_229 {
 	/*
 	Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times.
 	Follow-up: Could you solve the problem in linear time and in O(1) space?
+	
 	Example 1:
 	Input: nums = [3,2,3]
 	Output: [3]
-	Example 2:
 	
+	Example 2:
 	Input: nums = [1]
 	Output: [1]
-	Example 3:
 	
+	Example 3:
 	Input: nums = [1,2]
 	Output: [1,2]
  
@@ -24,6 +25,7 @@ public class MajorityElement_II_229 {
 	// Best Approach with Time Complexity O(N) and Space Complexity O(1)
 	 public ArrayList<Integer> majorityElement(int[] nums) {   
 	        ArrayList<Integer> Output = new  ArrayList<Integer>();
+	  
 	        int element1 = nums[0];
 	        int element2 = 0;
 	        int elem1Count = 1;
@@ -45,8 +47,11 @@ public class MajorityElement_II_229 {
 	                elem2Count--;
 	            }
 	        }
+	        
+	 
 	        elem1Count = 0;
 	        elem2Count = 0;
+	        
 	        for(int i:nums){
 	            if(i == element1){
 	                elem1Count++;
