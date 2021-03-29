@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Majority_Element_169 {
+	
 ///*
 //	Given an array nums of size n, return the majority element.
 //
@@ -51,8 +52,7 @@ public class Majority_Element_169 {
 	        }
 	        
 	        return output;
-	    }
-	 
+	 }
 	
 	
 	
@@ -80,9 +80,5 @@ public class Majority_Element_169 {
 */
 	
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc = new Scanner (System.in);
-	}
 }
 
