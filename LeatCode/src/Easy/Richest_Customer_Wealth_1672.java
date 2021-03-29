@@ -46,10 +46,6 @@ public class Richest_Customer_Wealth_1672 {
 	        return maxWealth;
 	        
 	 }
-	 
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
-
-		}
+	
 
 }
